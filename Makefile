@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -lcurl -lncurses
+CFLAGS = -Wall -Wextra -lcurl -lncurses -g
 SRCS = $(wildcard *.c)
 OBJS = $(patsubst %.c,%.o,$(SRCS))
 TARGET = client

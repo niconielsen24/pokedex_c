@@ -1,6 +1,7 @@
 #ifndef _POKE_H_
 #define _POKE_H_
 #include <stdlib.h>
+#include <ncurses.h>
 
 typedef struct {
     char* name;
@@ -17,7 +18,7 @@ int get_poke_data(Poke_data* data,char* text);
 
 int clean_poke_data(Poke_data* data);
 
-void name(char* name);
+int cool_name(char ch, int letter_hight,int line);
 
 // size_t get_substr_index(char* text,char* substr);
 
